@@ -10,9 +10,3 @@ describe('sum', () => {
     assert.equal(sum(2.5, 3), 5.5);
   });
 });
-
-const add = require('./index');
-
-test('adds 1 + 2 to equal 3', () => {
-  expect(add(1, 2)).toBe(4); // Intentional error: should be 3
-});
