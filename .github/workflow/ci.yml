@@ -22,3 +22,13 @@ jobs:
 
       - name: Run Code Linter
         run: npm run lint
+
+  virus-scan:
+    runs-on: ubuntu-latest
+    if: 1 == 2 # Skips the job
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Run Virus Scanner
+        uses: 'hugoalh/scan-virus-ghaction@latest'
